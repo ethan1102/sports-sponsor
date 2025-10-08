@@ -1,0 +1,121 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Logs
+logs/
+*.log
+
+# Model files and weights
+models/checkpoints/
+models/exports/
+models/logo_detection/weights/
+*.pt
+*.pth
+*.onnx
+*.engine
+*.tflite
+
+# Training outputs
+runs/
+output/
+
+# Data files (images and annotations)
+data/raw/
+data/processed/
+data/annotations/
+data/test_images/
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.webp
+*.mp4
+*.avi
+*.mov
+
+# YOLO specific
+*.cache
+
+# Model training artifacts
+models/logo_detection/*.png
+models/logo_detection/*.jpg
+models/logo_detection/*.csv
+models/logo_detection/args.yaml
+models/training_curves.png
+models/training_history.json
+
+# OS specific
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Windows
+*.stackdump
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
