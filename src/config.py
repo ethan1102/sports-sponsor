@@ -4,6 +4,8 @@ Configuration file for Japanese Sport Sponsor Logo Detection AI
 import os
 from pathlib import Path
 
+import torch
+
 # Project paths
 PROJECT_ROOT = Path(__file__).parent.parent  # Go up one level from src/
 DATA_DIR = PROJECT_ROOT / "data"
@@ -41,7 +43,8 @@ TRAINING_CONFIG = {
     "weight_decay": 0.0005,
     "patience": 20,  # Early stopping patience
     "save_period": 10,  # Save checkpoint every N epochs
-    "device": "cuda" if os.system("nvidia-smi") == 0 else "cpu"
+    # Use CUDA only if it is actually available to PyTorch
+    "device": "cuda" if torch.cuda.is_available() else "cpu",
 }
 
 # Data augmentation configuration
